@@ -11,7 +11,7 @@ struct ChatsView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                Text("Chats Here")
+                ChatListView(chats: Chat.all)
             }
             .navigationTitle("Chats")
         }

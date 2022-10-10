@@ -20,6 +20,10 @@
 		B1D5CC1528F44AB700268214 /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1428F44AB700268214 /* CallsView.swift */; };
 		B1D5CC1728F44AC600268214 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1628F44AC600268214 /* CameraView.swift */; };
 		B1D5CC1928F44AD100268214 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1828F44AD100268214 /* SettingsView.swift */; };
+		B1D5CC1C28F45E8E00268214 /* ChatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1B28F45E8E00268214 /* ChatsModel.swift */; };
+		B1D5CC1F28F45FEB00268214 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1E28F45FEB00268214 /* ChatListView.swift */; };
+		B1D5CC2228F4601D00268214 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC2128F4601D00268214 /* ChatScreen.swift */; };
+		B1D5CC2428F461CC00268214 /* ChatListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC2328F461CC00268214 /* ChatListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		B1D5CC1428F44AB700268214 /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
 		B1D5CC1628F44AC600268214 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		B1D5CC1828F44AD100268214 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B1D5CC1B28F45E8E00268214 /* ChatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsModel.swift; sourceTree = "<group>"; };
+		B1D5CC1E28F45FEB00268214 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		B1D5CC2128F4601D00268214 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		B1D5CC2328F461CC00268214 /* ChatListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 		B164C84528F447DC00AB99A7 /* whatsapp-ui */ = {
 			isa = PBXGroup;
 			children = (
+				B1D5CC1A28F45E6800268214 /* Models */,
 				B1D5CC0928F449B200268214 /* Views */,
 				B164C84628F447DC00AB99A7 /* whatsapp_uiApp.swift */,
 				B164C84A28F447DE00AB99A7 /* Assets.xcassets */,
@@ -142,6 +151,8 @@
 		B1D5CC0928F449B200268214 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B1D5CC2028F4600400268214 /* ChatSection */,
+				B1D5CC1D28F45FDB00268214 /* Components */,
 				B1D5CC0A28F449EC00268214 /* Main */,
 				B164C84828F447DC00AB99A7 /* ContentView.swift */,
 			);
@@ -159,6 +170,31 @@
 				B1D5CC1828F44AD100268214 /* SettingsView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		B1D5CC1A28F45E6800268214 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5CC1B28F45E8E00268214 /* ChatsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1D5CC1D28F45FDB00268214 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5CC1E28F45FEB00268214 /* ChatListView.swift */,
+				B1D5CC2328F461CC00268214 /* ChatListItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B1D5CC2028F4600400268214 /* ChatSection */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5CC2128F4601D00268214 /* ChatScreen.swift */,
+			);
+			path = ChatSection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,10 +329,14 @@
 			files = (
 				B1D5CC0F28F44A2800268214 /* TabBar.swift in Sources */,
 				B1D5CC1928F44AD100268214 /* SettingsView.swift in Sources */,
+				B1D5CC1C28F45E8E00268214 /* ChatsModel.swift in Sources */,
 				B1D5CC1728F44AC600268214 /* CameraView.swift in Sources */,
 				B164C84928F447DC00AB99A7 /* ContentView.swift in Sources */,
 				B1D5CC1128F44A9900268214 /* StatusView.swift in Sources */,
+				B1D5CC1F28F45FEB00268214 /* ChatListView.swift in Sources */,
 				B1D5CC1328F44AA600268214 /* ChatsView.swift in Sources */,
+				B1D5CC2428F461CC00268214 /* ChatListItem.swift in Sources */,
+				B1D5CC2228F4601D00268214 /* ChatScreen.swift in Sources */,
 				B1D5CC1528F44AB700268214 /* CallsView.swift in Sources */,
 				B164C84728F447DC00AB99A7 /* whatsapp_uiApp.swift in Sources */,
 			);

@@ -11,14 +11,14 @@ struct ChatListView: View {
     var chats: [Chat]
     var body: some View {
         VStack {
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 160),spacing: 15)], spacing: 15)  {
+            List {
                 ForEach(chats) {
                     chat in NavigationLink(destination: ChatScreen(chat: chat)) {
                         ChatListItem(chat: chat)
                     }
                 }
-            }.padding(.top)
-        }.padding(.horizontal)
+            }.background(.white)
+        }.background(.white)
     }
 }
 

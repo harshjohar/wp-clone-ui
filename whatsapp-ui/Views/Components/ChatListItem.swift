@@ -10,7 +10,9 @@ import SwiftUI
 struct ChatListItem: View {
     var chat : Chat
     var body: some View {
-        Text(chat.name)
+        HStack {
+            Text(chat.name)
+        }
     }
 }
 

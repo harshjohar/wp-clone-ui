@@ -17,8 +17,8 @@ struct ChatListView: View {
                         ChatListItem(chat: chat)
                     }
                 }
-            }.background(.white)
-        }.background(.white)
+            }
+        }
     }
 }
 

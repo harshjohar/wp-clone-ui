@@ -14,6 +14,12 @@
 		B164C85828F447DE00AB99A7 /* whatsapp_uiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B164C85728F447DE00AB99A7 /* whatsapp_uiTests.swift */; };
 		B164C86228F447DE00AB99A7 /* whatsapp_uiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B164C86128F447DE00AB99A7 /* whatsapp_uiUITests.swift */; };
 		B164C86428F447DE00AB99A7 /* whatsapp_uiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B164C86328F447DE00AB99A7 /* whatsapp_uiUITestsLaunchTests.swift */; };
+		B1D5CC0F28F44A2800268214 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC0E28F44A2800268214 /* TabBar.swift */; };
+		B1D5CC1128F44A9900268214 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1028F44A9900268214 /* StatusView.swift */; };
+		B1D5CC1328F44AA600268214 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1228F44AA600268214 /* ChatsView.swift */; };
+		B1D5CC1528F44AB700268214 /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1428F44AB700268214 /* CallsView.swift */; };
+		B1D5CC1728F44AC600268214 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1628F44AC600268214 /* CameraView.swift */; };
+		B1D5CC1928F44AD100268214 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D5CC1828F44AD100268214 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		B164C85D28F447DE00AB99A7 /* whatsapp-uiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "whatsapp-uiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B164C86128F447DE00AB99A7 /* whatsapp_uiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatsapp_uiUITests.swift; sourceTree = "<group>"; };
 		B164C86328F447DE00AB99A7 /* whatsapp_uiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatsapp_uiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1D5CC0E28F44A2800268214 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		B1D5CC1028F44A9900268214 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		B1D5CC1228F44AA600268214 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		B1D5CC1428F44AB700268214 /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
+		B1D5CC1628F44AC600268214 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B1D5CC1828F44AD100268214 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,8 @@
 		B164C84528F447DC00AB99A7 /* whatsapp-ui */ = {
 			isa = PBXGroup;
 			children = (
+				B1D5CC0928F449B200268214 /* Views */,
 				B164C84628F447DC00AB99A7 /* whatsapp_uiApp.swift */,
-				B164C84828F447DC00AB99A7 /* ContentView.swift */,
 				B164C84A28F447DE00AB99A7 /* Assets.xcassets */,
 				B164C84C28F447DE00AB99A7 /* Preview Content */,
 			);
@@ -125,6 +137,28 @@
 				B164C86328F447DE00AB99A7 /* whatsapp_uiUITestsLaunchTests.swift */,
 			);
 			path = "whatsapp-uiUITests";
+			sourceTree = "<group>";
+		};
+		B1D5CC0928F449B200268214 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5CC0A28F449EC00268214 /* Main */,
+				B164C84828F447DC00AB99A7 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1D5CC0A28F449EC00268214 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B1D5CC0E28F44A2800268214 /* TabBar.swift */,
+				B1D5CC1028F44A9900268214 /* StatusView.swift */,
+				B1D5CC1228F44AA600268214 /* ChatsView.swift */,
+				B1D5CC1428F44AB700268214 /* CallsView.swift */,
+				B1D5CC1628F44AC600268214 /* CameraView.swift */,
+				B1D5CC1828F44AD100268214 /* SettingsView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D5CC0F28F44A2800268214 /* TabBar.swift in Sources */,
+				B1D5CC1928F44AD100268214 /* SettingsView.swift in Sources */,
+				B1D5CC1728F44AC600268214 /* CameraView.swift in Sources */,
 				B164C84928F447DC00AB99A7 /* ContentView.swift in Sources */,
+				B1D5CC1128F44A9900268214 /* StatusView.swift in Sources */,
+				B1D5CC1328F44AA600268214 /* ChatsView.swift in Sources */,
+				B1D5CC1528F44AB700268214 /* CallsView.swift in Sources */,
 				B164C84728F447DC00AB99A7 /* whatsapp_uiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

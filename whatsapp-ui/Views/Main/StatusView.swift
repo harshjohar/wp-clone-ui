@@ -28,7 +28,7 @@ struct StatusView: View {
                                         .resizable()
                                         .frame(width: 58, height: 58)
                                         .cornerRadius(29)
-                                    Image(systemName: "plus.circle.full")
+                                    Image(systemName: "plus.circle")
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                         .foregroundColor(.blue)
@@ -118,7 +118,7 @@ struct StatusView: View {
         }
     }
     func privacyBtn() -> Button<Text> { return Button(action: {
-            print("privacy")
+            
         }, label: {
             Text("Privacy").fontWeight(.light)
         })

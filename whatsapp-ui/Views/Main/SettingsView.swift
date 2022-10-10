@@ -70,7 +70,7 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .navigationBarItems(trailing:
                 Button(action: {
-                    print("Tapped")
+                    
                 }, label: {
                     Image(systemName: "qrcode").font(.title)
                 })

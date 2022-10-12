@@ -11,7 +11,22 @@ struct ChatListItem: View {
     var chat : Chat
     var body: some View {
         HStack {
-            Text(chat.name)
+            Circle().stroke(Color.blue)
+                .frame(width: 58, height: 58)
+                .background(Image("rachel").resizable()
+                    .frame(width: 54, height: 54)
+                    .aspectRatio(contentMode: .fill)
+                    .scaledToFit())
+                .cornerRadius(27)
+            VStack(alignment: .leading) {
+                Text(chat.name)
+                    .foregroundColor(.primary)
+                    .font(.system(size: 16, weight: .semibold))
+                    .padding(.bottom, 4)
+                Text("14m ago")
+                    .foregroundColor(.secondary)
+                    .font(.system(size: 14, weight: .regular))
+            }.padding(.leading, 9)
         }
     }
 }

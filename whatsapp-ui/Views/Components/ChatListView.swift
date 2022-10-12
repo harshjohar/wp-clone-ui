@@ -13,11 +13,13 @@ struct ChatListView: View {
         VStack {
             List {
                 ForEach(chats) {
-                    chat in NavigationLink(destination: ChatScreen(chat: chat)) {
-                        ChatListItem(chat: chat)
+                    chat in ZStack(alignment: .leading) {
+//                        NavigationLink(destination: ChatScreen(chat: chat)) {
+                                ChatListItem(chat: chat)
+//                        }
                     }
                 }
-            }
+            }.padding(.all, 0)
         }
     }
 }

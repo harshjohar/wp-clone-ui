@@ -10,9 +10,7 @@ import SwiftUI
 struct ChatsView: View {
     var body: some View {
         NavigationView {
-            ScrollView {
                 ChatListView(chats: Chat.all)
-            }
             .navigationTitle("Chats")
         }
         .navigationViewStyle(.stack)
